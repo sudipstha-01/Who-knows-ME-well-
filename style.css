@@ -3,3 +3,21 @@
     margin: 0;
     box-sizing: border-box;
 }
+body{
+    /* background-image: url(grid/grid-img.jpg);
+    background-size: 900px 900px;
+    background-repeat: repeat;
+    background-attachment: fixed; */
+}
+/* i just added a background image as grid  */
+body::before{
+    content: "";
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background-image: url(grid/grid-img.jpg);
+    opacity: 0.4;
+    background-repeat: no-repeat;
+    z-index: -1;
+    background-size: cover;
+}
